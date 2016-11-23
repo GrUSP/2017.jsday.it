@@ -1,0 +1,479 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "ProximaNovaCondensedExtrabold";
+  src: url("../fonts/ProximaNovaCond-Xbold-webfont.eot");
+  src: url("../fonts/ProximaNovaCond-Xbold-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/ProximaNovaCond-Xbold-webfont.woff") format("woff"),
+    url("../fonts/ProximaNovaCond-Xbold-webfont.ttf") format("truetype"),
+   url("../fonts/ProximaNovaCond-Xbold-webfont.svg#ProximaNovaCondensedExtrabold") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1.0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 60rem;
+  padding: 0 1rem;
+}
+
+.section-title {
+  font-family: "ProximaNovaCondensedExtrabold";
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+
+
+/* Past Editions */
+
+.past-editions {
+  background-color: #000;
+  font-size: 0.875rem;
+  padding: 0.5rem 0;
+  text-align: right;
+}
+
+.past-editions__title {
+  color: #ccc;
+}
+
+@media (max-width: 30rem) {
+  .past-editions__title {
+    display: none;
+  }
+}
+
+.past-editions__link {
+  color: #8c68cb;
+  margin-left: 0.5rem;
+}
+
+
+
+/* Header */
+
+.header {
+  background-image: linear-gradient(to right, #262261, #652D90);
+  padding: 2.5rem 0;
+}
+
+.header__content {
+  align-items: center;
+  display: flex;
+}
+
+@media (max-width: 30rem) {
+  .header__content {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.header__extra {
+  margin-left: auto;
+  text-align: right;
+}
+
+@media (max-width: 30rem) {
+  .header__extra {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+.header__info {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.header_call-for-papers {
+  animation: pulsate 3s ease-out infinite;
+  background-color: #fff;
+  color: #262261;
+  display: inline-block;
+  font-family: "ProximaNovaCondensedExtrabold";
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.header_call-for-papers:hover {
+  animation: pulsate .5s ease-out infinite;
+}
+
+
+
+/* Conference */
+
+.conference {
+  margin-bottom: 3rem;
+}
+
+.conference__title {
+  font-family: "ProximaNovaCondensedExtrabold";
+  font-size: 3rem;
+  margin: 3rem 0;
+  text-transform: uppercase;
+}
+
+.conference__subtitle {
+  color: #652D90;
+  display: block;
+}
+
+.conference__info {
+  font-size: 2rem;
+}
+
+
+
+/* Speakers */
+
+.speakers {
+  margin-bottom: 3rem;
+}
+
+.speakers__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+}
+
+.speaker {
+  flex-grow: 1;
+  max-width: 25%;
+  min-width: 25%;
+  padding: 0.5rem;
+}
+
+@media (max-width: 60rem) {
+  .speaker {
+    max-width: 50%;
+    min-width: 50%;
+  }
+}
+
+@media (max-width: 30rem) {
+  .speaker {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+
+.speaker__card {
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0,.1),0 0 2px rgba(0, 0, 0,.1);
+  display: block;
+  transition: transform .24s, box-shadow .24s;
+}
+
+.speaker__card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0,.1),0 0 2px rgba(0, 0, 0,.1);
+  transform: translateY(-4px);
+}
+
+.speaker__picture {
+  background-position: center;
+  background-size: cover;
+  min-height: 12.5rem;
+  min-width: 12.5rem;
+}
+
+.speaker__info {
+  padding: 0.5rem;
+}
+
+.speaker__name {
+  color: #000;
+  margin-bottom: 0.25rem;
+}
+
+.speaker__company {
+  font-size: 0.875rem;
+  color: #652D90;
+}
+
+
+
+/* Communities */
+
+.communities {
+  margin: 3rem 0 2rem 0;
+}
+
+.communities__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.community {
+  flex-grow: 1;
+  min-width: 25%;
+  max-width: 25%;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 60rem) {
+  .community {
+    min-width: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 30rem) {
+  .community {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+
+.community__card {
+  display: inline-block;
+}
+
+.community__logo {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  height: auto;
+  margin-bottom: .25rem;
+  max-width: 12.5rem;
+  transition: border .24s;
+}
+
+.community__card:hover .community__logo {
+  border: 1px solid #652D90;
+}
+
+.community__name {
+  color: #ccc;
+  text-align: center;
+  transition: color .24s;
+}
+
+.community__card:hover .community__name {
+  color: #652D90;
+}
+
+
+
+/* Tickets */
+
+.tickets {
+  margin-bottom: 3rem;
+}
+
+.tickets__iframe {
+  border: 0;
+  height: 674px;
+  width: 100%;
+}
+
+
+
+/* Mailing list */
+
+.mailing-list {
+  background-color: rgba(38, 34, 97, 0.4);
+  font-size: 1.5rem;
+  padding: 2.5rem 0;
+}
+
+.mailing-list__content {
+  display: flex;
+}
+
+@media (max-width: 60rem) {
+  .mailing-list__content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.mailing-list__description {
+  line-height: 1.2;
+}
+
+@media (max-width: 60rem) {
+  .mailing-list__description {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.mailing-list__subscribe {
+  font-weight: bold;
+}
+
+.mailing-list__form {
+  align-self: center;
+  margin-left: auto;
+}
+
+@media (max-width: 60rem) {
+  .mailing-list__form {
+    margin-left: 0;
+  }
+}
+
+.mailing-list__input {
+  -webkit-appearance: none;
+  border-radius: 2px;
+  border: 1px solid #652D90;
+  font-size: inherit;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+@media (max-width: 60rem) {
+  .mailing-list__input {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.mailing-list__button {
+  -webkit-appearance: none;
+  background-color: #652D90;
+  border-radius: 2px;
+  border: 1px solid #652D90;
+  color: #fff;
+  font-size: inherit;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+
+
+/* Footer */
+
+.footer {
+  background-color: rgba(38, 34, 97, 0.8);
+  color: #fff;
+  font-size: 0.875rem;
+  padding: 2.5rem 0;
+}
+
+.footer__content {
+  align-items: center;
+  display: flex;
+}
+
+@media (max-width: 30rem) {
+  .footer__content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 30rem) {
+  .footer__extra {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.footer__copy {
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.footer__link {
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer__contact {
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.footer__social {
+  color: #000;
+  margin-right: 0.5rem;
+}
+
+.footer__grusp {
+  margin-left: auto;
+}
+
+@media (max-width: 30rem) {
+  .footer__grusp {
+    margin-left: 0;
+  }
+}
+
+.footer__logo {
+  height: 150px;
+  width: 150px;
+}
