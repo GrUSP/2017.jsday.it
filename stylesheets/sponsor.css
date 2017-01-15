@@ -1,0 +1,382 @@
+
+/* Sponsor Intro */
+
+.sponsor-intro {
+  margin-bottom: 3rem;
+}
+
+.sponsor-intro__subtitle {
+  color: #652D90;
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+
+.sponsor-intro__description {
+  columns: 2;
+  line-height: 1.4;
+}
+
+@media (max-width: 60rem) {
+  .sponsor-intro__description {
+    columns: 1;
+  }
+}
+
+
+
+/* jsDay Facts */
+
+.jsday-facts {
+  margin-bottom: 3rem;
+}
+
+.jsday-fact__list {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.jsday-fact {
+  flex-grow: 1;
+}
+
+.jsday-information {
+  line-height: 1.4;
+}
+
+.jsday-fact__subtitle {
+  color: #652D90;
+  display: block;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.jsday-fact__number {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.jsday-facts__footer {
+  font-size: 0.85rem;
+}
+
+.jsday-facts__download {
+  color: #000;
+  font-weight: bold;
+}
+
+
+/* Packages */
+
+.packages {
+  margin-bottom: 3rem;
+}
+
+.packages__subtitle {
+  color: #652D90;
+  font-family: "ProximaNovaCondensedExtrabold";
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
+.packages__description {
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.packages__payment {
+  line-height: 1.4;
+  margin-bottom: 3rem;
+}
+
+.packages__number {
+  font-weight: bold;
+}
+
+.packages__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+}
+
+.package {
+  cursor: pointer;
+  flex-grow: 1;
+  max-width: 33%;
+  min-width: 33%;
+  padding: 0.5rem;
+}
+
+@media (max-width: 60rem) {
+  .package {
+    max-width: 50%;
+    min-width: 50%;
+  }
+}
+
+@media (max-width: 30rem) {
+  .package {
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+
+.package__card {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  height: 100%;
+  transition: border-color .24s;
+}
+
+.package:hover .package__card {
+  border-color: #652D90;
+}
+
+.package__name {
+  background-color: #652D90;
+  color: #fff;
+  font-family: "ProximaNovaCondensedExtrabold";
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.package__info {
+  background-color: #eee;
+  padding: 1rem;
+}
+
+.package__price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.package__vat {
+  font-size: 0.75rem;
+}
+
+.package__availability {
+  color: #652D90;
+  text-align: center;
+}
+
+.package__features {
+  padding: 1rem;
+}
+
+.package__feature {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.package__feature:last-child {
+  margin-bottom: 0;
+}
+
+.package__check {
+  color: #ccc;
+  left: 0;
+  position: absolute;
+  transition: color .24s;
+}
+
+.package__feature:hover .package__check {
+  color: #652D90;
+}
+
+/* Diamond */
+
+.package--diamond:hover .package__card {
+  border-color: #000;
+}
+
+.package--diamond .package__name {
+  background-color: #000;
+}
+
+.package--diamond .package__availability,
+.package--diamond .package__feature:hover .package__check {
+  color: #000;
+}
+
+/* Platinum */
+
+.package--platinum:hover .package__card {
+  border-color: #617cbe;
+}
+
+.package--platinum .package__name {
+  background-color: #617cbe;
+}
+
+.package--platinum .package__availability,
+.package--platinum .package__feature:hover .package__check {
+  color: #617cbe;
+}
+
+/* Gold */
+
+.package--gold:hover .package__card {
+  border-color: #dbb541;
+}
+
+.package--gold .package__name {
+  background-color: #dbb541;
+}
+
+.package--gold .package__availability,
+.package--gold .package__feature:hover .package__check {
+  color: #dbb541;
+}
+
+/* Silver */
+
+.package--silver:hover .package__card {
+  border-color: #bfbfbf;
+}
+
+.package--silver .package__name {
+  background-color: #bfbfbf;
+}
+
+.package--silver .package__availability,
+.package--silver .package__feature:hover .package__check {
+  color: #bfbfbf;
+}
+
+/* Bronze */
+
+.package--bronze:hover .package__card {
+  border-color: #7b7058;
+}
+
+.package--bronze .package__name {
+  background-color: #7b7058;
+}
+
+.package--bronze .package__availability,
+.package--bronze .package__feature:hover .package__check {
+  color: #7b7058;
+}
+
+
+
+/* Sponsors */
+
+.sponsors {
+  margin: 3rem 0 2rem 0;
+}
+
+.sponsors__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sponsor {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+  max-width: 25%;
+  min-width: 25%;
+}
+
+@media (max-width: 60rem) {
+  .sponsor {
+    max-width: 50%;
+    min-width: 50%;
+  }
+}
+
+@media (max-width: 30rem) {
+  .sponsor {
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+
+.sponsor__card {
+  display: inline-block;
+  position: relative;
+}
+
+.sponsor__card:hover .sponsor__logo {
+  border-color: #652D90;
+}
+
+.sponsor__package {
+  background-color: #652D90;
+  color: #fff;
+  font-family: "ProximaNovaCondensedExtrabold";
+  font-size: 0.75rem;
+  letter-spacing: 0.05rem;
+  padding: 0.1rem 0.2rem 0.1rem 0.25rem;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+  top: 0;
+}
+
+.sponsor__logo {
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  max-width: 12.5rem;
+  transition: border-color .24s;
+}
+
+/* Diamond */
+
+.sponsor--diamond .sponsor__package {
+  background-color: #000;
+}
+
+.sponsor--diamond .sponsor__card:hover .sponsor__logo {
+  border-color: #000;
+}
+
+/* Platinum */
+
+.sponsor--platinum .sponsor__package {
+  background-color: #617cbe;
+}
+
+.sponsor--platinum .sponsor__card:hover .sponsor__logo {
+  border-color: #617cbe;
+}
+
+/* Gold */
+
+.sponsor--gold .sponsor__package {
+  background-color: #dbb541;
+}
+
+.sponsor--gold .sponsor__card:hover .sponsor__logo {
+  border-color: #dbb541;
+}
+
+/* Silver */
+
+.sponsor--silver .sponsor__package {
+  background-color: #bfbfbf;
+}
+
+.sponsor--silver .sponsor__card:hover .sponsor__logo {
+  border-color: #bfbfbf;
+}
+
+/* Bronze */
+
+.sponsor--bronze .sponsor__package {
+  background-color: #7b7058;
+}
+
+.sponsor--bronze .sponsor__card:hover .sponsor__logo {
+  border-color: #7b7058;
+}
