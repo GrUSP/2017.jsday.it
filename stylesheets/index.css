@@ -167,6 +167,59 @@
 
 
 
+/* Media partners */
+
+.media-partners {
+  margin: 3rem 0 2rem 0;
+}
+
+.media-partners__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.media-partner {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+  max-width: 20%;
+  min-width: 20%;
+}
+
+@media (max-width: 60rem) {
+  .media-partner {
+    max-width: 33%;
+    min-width: 33%;
+  }
+}
+
+@media (max-width: 30rem) {
+  .media-partner {
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+
+.media-partner__card {
+  align-items: center;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  display: inline-flex;
+  height: 100%;
+  transition: border .24s;
+}
+
+.media-partner__logo {
+  height: auto;
+  max-width: 9rem;
+  padding: .25rem;
+}
+
+.media-partner__card:hover {
+  border: 1px solid #652D90;
+}
+
+
+
 /* Mailing list */
 
 .mailing-list {
