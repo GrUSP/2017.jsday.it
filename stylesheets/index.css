@@ -106,21 +106,21 @@
 .community {
   flex-grow: 1;
   margin-bottom: 1rem;
-  max-width: 25%;
-  min-width: 25%;
+  max-width: 12.5%;
+  min-width: 12.5%;
 }
 
 @media (max-width: 60rem) {
   .community {
-    max-width: 50%;
-    min-width: 50%;
+    max-width: 25%;
+    min-width: 25%;
   }
 }
 
 @media (max-width: 30rem) {
   .community {
-    max-width: 100%;
-    min-width: 100%;
+    max-width: 50%;
+    min-width: 50%;
   }
 }
 
@@ -133,7 +133,7 @@
   border-radius: 2px;
   height: auto;
   margin-bottom: .25rem;
-  max-width: 12.5rem;
+  max-width: 6.25rem;
   transition: border .24s;
 }
 
