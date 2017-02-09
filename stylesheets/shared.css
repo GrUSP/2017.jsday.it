@@ -282,3 +282,116 @@ a {
   height: 150px;
   width: 150px;
 }
+
+/* Sponsors */
+
+.sponsors {
+  margin: 3rem 0 2rem 0;
+}
+
+.sponsors__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sponsor {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+  max-width: 25%;
+  min-width: 25%;
+}
+
+@media (max-width: 60rem) {
+  .sponsor {
+    max-width: 50%;
+    min-width: 50%;
+  }
+}
+
+@media (max-width: 30rem) {
+  .sponsor {
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+
+.sponsor__card {
+  display: inline-block;
+  position: relative;
+}
+
+.sponsor__card:hover .sponsor__logo {
+  border-color: #652D90;
+}
+
+.sponsor__package {
+  background-color: #652D90;
+  color: #fff;
+  font-family: "ProximaNovaCondensedExtrabold";
+  font-size: 0.75rem;
+  letter-spacing: 0.05rem;
+  padding: 0.1rem 0.2rem 0.1rem 0.25rem;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+  top: 0;
+}
+
+.sponsor__logo {
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  max-width: 12.5rem;
+  min-width: 12.5rem;
+  height: auto;
+  transition: border-color .24s;
+}
+
+/* Diamond */
+
+.sponsor--diamond .sponsor__package {
+  background-color: #000;
+}
+
+.sponsor--diamond .sponsor__card:hover .sponsor__logo {
+  border-color: #000;
+}
+
+/* Platinum */
+
+.sponsor--platinum .sponsor__package {
+  background-color: #617cbe;
+}
+
+.sponsor--platinum .sponsor__card:hover .sponsor__logo {
+  border-color: #617cbe;
+}
+
+/* Gold */
+
+.sponsor--gold .sponsor__package {
+  background-color: #dbb541;
+}
+
+.sponsor--gold .sponsor__card:hover .sponsor__logo {
+  border-color: #dbb541;
+}
+
+/* Silver */
+
+.sponsor--silver .sponsor__package {
+  background-color: #bfbfbf;
+}
+
+.sponsor--silver .sponsor__card:hover .sponsor__logo {
+  border-color: #bfbfbf;
+}
+
+/* Bronze */
+
+.sponsor--bronze .sponsor__package {
+  background-color: #7b7058;
+}
+
+.sponsor--bronze .sponsor__card:hover .sponsor__logo {
+  border-color: #7b7058;
+}
