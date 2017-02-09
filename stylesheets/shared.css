@@ -283,6 +283,191 @@ a {
   width: 150px;
 }
 
+/* Communities */
+
+.communities {
+  margin: 3rem 0 2rem 0;
+}
+
+.communities__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.community {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+  max-width: 12.5%;
+  min-width: 12.5%;
+}
+
+@media (max-width: 60rem) {
+  .community {
+    max-width: 25%;
+    min-width: 25%;
+  }
+}
+
+@media (max-width: 30rem) {
+  .community {
+    max-width: 50%;
+    min-width: 50%;
+  }
+}
+
+.community__card {
+  display: inline-block;
+}
+
+.community__logo {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  height: auto;
+  margin-bottom: .25rem;
+  max-width: 6.25rem;
+  transition: border .24s;
+}
+
+.community__card:hover .community__logo {
+  border: 1px solid #652D90;
+}
+
+.community__name {
+  color: #ccc;
+  text-align: center;
+  transition: color .24s;
+}
+
+.community__card:hover .community__name {
+  color: #652D90;
+}
+
+
+/* Media partners */
+
+.media-partners {
+  margin: 3rem 0 2rem 0;
+}
+
+.media-partners__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.media-partner {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+  max-width: 20%;
+  min-width: 20%;
+}
+
+@media (max-width: 60rem) {
+  .media-partner {
+    max-width: 33%;
+    min-width: 33%;
+  }
+}
+
+@media (max-width: 30rem) {
+  .media-partner {
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+
+.media-partner__card {
+  align-items: center;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  display: inline-flex;
+  height: 100%;
+  transition: border .24s;
+}
+
+.media-partner__logo {
+  height: auto;
+  min-width: 9rem;
+  max-width: 9rem;
+  padding: .25rem;
+}
+
+.media-partner__card:hover {
+  border: 1px solid #652D90;
+}
+
+
+
+/* Mailing list */
+
+.mailing-list {
+  background-color: rgba(38, 34, 97, 0.4);
+  font-size: 1.5rem;
+  padding: 2.5rem 0;
+}
+
+.mailing-list__content {
+  display: flex;
+}
+
+@media (max-width: 60rem) {
+  .mailing-list__content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.mailing-list__description {
+  line-height: 1.2;
+}
+
+@media (max-width: 60rem) {
+  .mailing-list__description {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.mailing-list__subscribe {
+  font-weight: bold;
+}
+
+.mailing-list__form {
+  align-self: center;
+  margin-left: auto;
+}
+
+@media (max-width: 60rem) {
+  .mailing-list__form {
+    margin-left: 0;
+  }
+}
+
+.mailing-list__input {
+  -webkit-appearance: none;
+  border-radius: 2px;
+  border: 1px solid #652D90;
+  font-size: inherit;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+@media (max-width: 60rem) {
+  .mailing-list__input {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.mailing-list__button {
+  -webkit-appearance: none;
+  background-color: #652D90;
+  border-radius: 2px;
+  border: 1px solid #652D90;
+  color: #fff;
+  font-size: inherit;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+
 /* Sponsors */
 
 .sponsors {
