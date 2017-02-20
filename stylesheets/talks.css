@@ -1,0 +1,113 @@
+.talk {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+@media (max-width: 30rem) {
+  .talk {
+    flex-direction: column;
+  }
+}
+
+.talk__speaker {
+  margin-right: 1.5rem;
+}
+
+@media (max-width: 30rem) {
+  .talk__speaker {
+    display: flex;
+    margin-top: 1rem;
+    order: 2;
+  }
+}
+
+.talk__picture {
+  background-image: linear-gradient(45deg, #262261, #652D90);
+  background-position: center;
+  background-size: cover;
+  border-radius: 2px;
+  border: 1px solid #fff;
+  margin-bottom: 0.5rem;
+  min-height: 8rem;
+  min-width: 8rem;
+  transition: border .24s;
+}
+
+@media (max-width: 30rem) {
+  .talk__picture {
+    margin-right: 0.5rem;
+    min-height: 2.5rem;
+    min-width: 2.5rem;
+  }
+}
+
+.talk__speaker:hover .talk__picture {
+  border: 1px solid #652D90;
+}
+
+.talk__name {
+  color: #000;
+  margin-bottom: 0.25rem;
+}
+
+.talk__company {
+  color: #652D90;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 30rem) {
+  .talk__content {
+    order: 1;
+  }
+}
+
+.talk__title {
+  font-family: "ProximaNovaCondensedExtrabold";
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.talk__tags {
+  margin-bottom: 1rem;
+}
+
+.talk__tag {
+  background-color: #262261;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  margin-right: 1rem;
+  padding: 0 0.3rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: background-color .24s;
+}
+
+.talk:hover .talk__tag {
+  background-color: #652D90;
+}
+
+.talk__tag::after {
+  border-bottom: 0.5rem solid transparent;
+  border-left: 0.5rem solid #262261;
+  border-top: 0.5rem solid transparent;
+  content: ' ';
+  height: 0;
+  position: absolute;
+  right: -0.5rem;
+  top: 0;
+  transition: border-left .24s;
+  width: 0;
+}
+
+.talk:hover .talk__tag::after {
+  border-left: 0.5rem solid #652D90;
+}
+
+.talk__abstract {
+  line-height: 1.4;
+}
