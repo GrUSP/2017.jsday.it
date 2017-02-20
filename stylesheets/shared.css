@@ -154,29 +154,16 @@ a {
   }
 }
 
-.header__call-for-papers {
-  background-color: #fff;
-  border: 4px dotted #8c68cb;
-  color: #262261;
-  display: inline-block;
-  font-family: "ProximaNovaCondensedExtrabold";
+.header__dates {
+  color: #fff;
   font-size: 2rem;
-  padding: 1rem;
-  text-transform: uppercase;
-  white-space: nowrap;
+  margin-bottom: 0.25rem;
 }
 
-.header__call-for-papers:hover {
-  animation: pulsate .5s ease-out infinite;
+.header__address {
+  color: #ccc;
+  font-size: 1.2rem;
 }
-
-.header__call-for-papers--accent {
-  color: #8c68cb;
-  display: block;
-  font-style: italic;
-  margin-top: 0.25rem;
-}
-
 
 
 /* Menu */
