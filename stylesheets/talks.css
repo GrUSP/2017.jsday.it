@@ -13,6 +13,7 @@
 
 .talk__speaker {
   margin-right: 1.5rem;
+  min-width: 8em;
 }
 
 @media (max-width: 30rem) {
