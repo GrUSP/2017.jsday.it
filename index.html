@@ -2,551 +2,560 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>jsDay 2017 | The international Javascript Conference</title>
+  <meta charset="utf-8">
+  <title>jsDay 2017 | The international Javascript Conference</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheets/shared.css">
-    <link rel="stylesheet" href="stylesheets/index.css">
-    <link rel="icon" type="image/png" href="http://2017.jsday.it/images/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheets/shared.css">
+  <link rel="stylesheet" href="stylesheets/index.css">
+  <link rel="icon" type="image/png" href="http://2017.jsday.it/images/favicon.png" />
 
-    <meta name="og:title" property="og:title" content="jsDay - May 10th-11th 2017 — Verona, Italy" />
-    <meta name="og:url" property="og:url" content="http://2017.jsday.it" />
-    <meta name="og:description" property="og:description" content="The first international conference on JavaScript in Italy. May 10th-11th 2017 — Verona, Italy." />
-    <meta name="og:image" property="og:image" content="http://2017.jsday.it/images/og.png" />
-    <meta name="fb:admins" property="fb:admins" content="710160778" />
+  <meta name="og:title" property="og:title" content="jsDay - May 10th-11th 2017 — Verona, Italy" />
+  <meta name="og:url" property="og:url" content="http://2017.jsday.it" />
+  <meta name="og:description" property="og:description" content="The first international conference on JavaScript in Italy. May 10th-11th 2017 — Verona, Italy." />
+  <meta name="og:image" property="og:image" content="http://2017.jsday.it/images/og.png" />
+  <meta name="fb:admins" property="fb:admins" content="710160778" />
 
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@jsconfit" />
-    <meta name="twitter:title" content="jsDay - May 10th-11th 2017 — Verona, Italy" />
-    <meta name="twitter:description" content="The first international conference on JavaScript in Italy. May 10th-11th 2017 — Verona, Italy." />
-    <meta name="twitter:image" content="http://2017.jsday.it/images/og.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@jsconfit" />
+  <meta name="twitter:title" content="jsDay - May 10th-11th 2017 — Verona, Italy" />
+  <meta name="twitter:description" content="The first international conference on JavaScript in Italy. May 10th-11th 2017 — Verona, Italy." />
+  <meta name="twitter:image" content="http://2017.jsday.it/images/og.png" />
 
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-3559597-13', 'auto');
-        ga('send', 'pageview');
-    </script>
+    ga('create', 'UA-3559597-13', 'auto');
+    ga('send', 'pageview');
+  </script>
 </head>
 
 <body>
 
-    <div class="past-editions">
-        <div class="container">
-            <span class="past-editions__title">Browse past editions</span>
-            <a class="past-editions__link" href="http://2012.jsday.it" title="jsday 2012">2012</a>
-            <a class="past-editions__link" href="http://2013.jsday.it" title="jsday 2013">2013</a>
-            <a class="past-editions__link" href="http://2014.jsday.it" title="jsday 2014">2014</a>
-            <a class="past-editions__link" href="http://2015.jsday.it" title="jsday 2015">2015</a>
-            <a class="past-editions__link" href="http://2016.jsday.it" title="jsday 2016">2016</a>
-        </div>
+  <div class="past-editions">
+    <div class="container">
+      <span class="past-editions__title">Browse past editions</span>
+      <a class="past-editions__link" href="http://2012.jsday.it" title="jsday 2012">2012</a>
+      <a class="past-editions__link" href="http://2013.jsday.it" title="jsday 2013">2013</a>
+      <a class="past-editions__link" href="http://2014.jsday.it" title="jsday 2014">2014</a>
+      <a class="past-editions__link" href="http://2015.jsday.it" title="jsday 2015">2015</a>
+      <a class="past-editions__link" href="http://2016.jsday.it" title="jsday 2016">2016</a>
     </div>
+  </div>
 
-    <header class="header">
-        <div class="container">
-            <div class="header__content">
-                <h1>
-                    <a href="http://2017.jsday.it" title="jsDay 2017">
-                        <img src="images/logos/jsday.png" alt="jsDay 2017" />
-                    </a>
-                </h1>
-                <div class="header__extra">
-                  <div class="header__dates">
-                    May 10th-11th 2017
-                  </div>
-                  <div class="header__address">
-                    Hotel S. Marco &mdash; Verona, Italy
-                  </div>
-                </div>
-            </div>
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <h1>
+          <a href="http://2017.jsday.it" title="jsDay 2017">
+            <img src="images/logos/jsday.png" alt="jsDay 2017" />
+          </a>
+        </h1>
+        <div class="header__extra">
+          <div class="header__dates">
+            May 10th-11th 2017
+          </div>
+          <div class="header__address">
+            Hotel S. Marco &mdash; Verona, Italy
+          </div>
         </div>
-    </header>
+      </div>
+    </div>
+  </header>
 
-    <div class="menu">
-        <div class="container">
-            <div class="menu__items">
-                <a class="menu__item" href="index.html" title="jsDay 2017">
+  <div class="menu">
+    <div class="container">
+      <div class="menu__items">
+        <a class="menu__item" href="index.html" title="jsDay 2017">
                     Home
                 </a>
-                <a class="menu__item" href="sponsor.html" title="Sponsor">
+        <a class="menu__item" href="sponsor.html" title="Sponsor">
                     Sponsor
                 </a>
-                <a class="menu__item" href="talks.html" title="Talks">
+        <a class="menu__item" href="talks.html" title="Talks">
                   Talks
                 </a>
-                <a class="menu__item" href="tickets.html" title="Tickets">
+        <a class="menu__item" href="tickets.html" title="Tickets">
             Tickets
           </a>
-            </div>
-        </div>
+      </div>
     </div>
+  </div>
 
-    <div class="conference">
-        <div class="container">
-            <h2 class="conference__title">
-                The most used language
-                <span class="conference__subtitle">
+  <div class="conference">
+    <div class="container">
+      <h2 class="conference__title">
+        The most used language
+        <span class="conference__subtitle">
                 the most needed conference
               </span>
-            </h2>
-            <h3 class="conference__info">
-                May 10th-11th 2017 &mdash; Verona, Italy
-            </h3>
-        </div>
+      </h2>
+      <h3 class="conference__info">
+        May 10th-11th 2017 &mdash; Verona, Italy
+      </h3>
     </div>
+  </div>
 
-    <div class="speakers">
-        <div class="container">
-            <div class="section-title">On stage</div>
-            <div class="speakers__list">
-                <div class="speaker">
-                    <a class="speaker__card" href="https://twitter.com/hotifatos" title="Fatos Hoti">
-                        <div class="speaker__picture" style="background-image: url('images/speakers/fatos_hoti.png')"></div>
-                        <div class="speaker__info">
-                            <div class="speaker__name">Fatos Hoti</div>
-                            <div class="speaker__company">Klara</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="speaker">
-                    <a class="speaker__card" href="https://twitter.com/_paulverbeek" title="Paul Verbeek">
-                        <div class="speaker__picture" style="background-image: url('images/speakers/paul_verbeek.png')"></div>
-                        <div class="speaker__info">
-                            <div class="speaker__name">Paul Verbeek</div>
-                            <div class="speaker__company">Booking.com</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="speaker">
-                    <a class="speaker__card" href="https://twitter.com/balsamiqMarco" title="Marco Botton">
-                        <div class="speaker__picture" style="background-image: url('images/speakers/marco_botton.jpeg')"></div>
-                        <div class="speaker__info">
-                            <div class="speaker__name">Marco Botton</div>
-                            <div class="speaker__company">Balsamiq</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="speaker">
-                    <a class="speaker__card" href="https://twitter.com/sm15455" title="Stefano Mostarda">
-                        <div class="speaker__picture" style="background-image: url('images/speakers/stefano_mostarda.png')"></div>
-                        <div class="speaker__info">
-                            <div class="speaker__name">Stefano Mostarda</div>
-                            <div class="speaker__company">Microsoft</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="speaker">
-                    <a class="speaker__card" href="https://twitter.com/tessamero" title="Tessa Mero">
-                        <div class="speaker__picture" style="background-image: url('images/speakers/tessa_mero.jpeg')"></div>
-                        <div class="speaker__info">
-                            <div class="speaker__name">Tessa Mero</div>
-                            <div class="speaker__company">Cisco</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="speaker">
-                    <a class="speaker__card" href="https://twitter.com/michelebertoli" title="Michele Bertoli">
-                        <div class="speaker__picture" style="background-image: url('images/speakers/michele_bertoli.jpeg')"></div>
-                        <div class="speaker__info">
-                            <div class="speaker__name">Michele Bertoli</div>
-                            <div class="speaker__company">Facebook</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="speaker">
-                    <a class="speaker__card" href="https://twitter.com/nickbalestra" title="Nick Balestra">
-                        <div class="speaker__picture" style="background-image: url('images/speakers/nick_balestra.jpg')"></div>
-                        <div class="speaker__info">
-                            <div class="speaker__name">Nick Balestra</div>
-                            <div class="speaker__company">OpenTable</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="speaker">
-                    <a class="speaker__card" href="https://twitter.com/philnash" title="Phil Nash">
-                        <div class="speaker__picture" style="background-image: url('images/speakers/phil_nash.jpeg')"></div>
-                        <div class="speaker__info">
-                            <div class="speaker__name">Phil Nash</div>
-                            <div class="speaker__company">Twilio</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="speaker">
-                    <a class="speaker__card" href="https://twitter.com/_odino_" title="Alessandro Nadalin">
-                        <div class="speaker__picture" style="background-image: url('images/speakers/alessandro_nadalin.jpeg')"></div>
-                        <div class="speaker__info">
-                            <div class="speaker__name">Alessandro Nadalin</div>
-                            <div class="speaker__company">Namshi</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="speaker">
-                    <a class="speaker__card" href="https://twitter.com/NikhilVerma" title="Nikhil Verma">
-                        <div class="speaker__picture" style="background-image: url('images/speakers/nikhil_verma.jpg')"></div>
-                        <div class="speaker__info">
-                            <div class="speaker__name">Nikhil Verma</div>
-                            <div class="speaker__company">Badoo</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="speaker">
-                    <a class="speaker__card" href="https://twitter.com/lucamezzalira" title="Luca Mezzalira">
-                        <div class="speaker__picture" style="background-image: url('images/speakers/luca.jpg')"></div>
-                        <div class="speaker__info">
-                            <div class="speaker__name">Luca Mezzalira</div>
-                            <div class="speaker__company">DAZN</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="speaker">
-                    <a class="speaker__card" href="https://twitter.com/jjordan_dev" title="Jessica Jordan">
-                        <div class="speaker__picture" style="background-image: url('images/speakers/jessica.jpg')"></div>
-                        <div class="speaker__info">
-                            <div class="speaker__name">Jessica Jordan</div>
-                            <div class="speaker__company">Freelance</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="speaker">
-                    <a class="speaker__card" href="https://twitter.com/cef62" title="Matteo Ronchi">
-                        <div class="speaker__picture" style="background-image: url('images/speakers/ronchi.jpg')"></div>
-                        <div class="speaker__info">
-                            <div class="speaker__name">Matteo Ronchi</div>
-                            <div class="speaker__company">WorkWave</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="speaker">
-                    <a class="speaker__card" href="https://twitter.com/addaleax" title="Anna Henningsen">
-                        <div class="speaker__picture" style="background-image: url('images/speakers/anna.jpg')"></div>
-                        <div class="speaker__info">
-                            <div class="speaker__name">Anna Henningsen</div>
-                            <div class="speaker__company">Node.js contributor</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="speaker">
-                    <a class="speaker__card" href="https://twitter.com/_lrlna" title="Irina Shestak">
-                        <div class="speaker__picture" style="background-image: url('images/speakers/irina.jpg')"></div>
-                        <div class="speaker__info">
-                            <div class="speaker__name">Irina Shestak</div>
-                            <div class="speaker__company">Small Media</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="speaker">
-                    <a class="speaker__card" href="https://twitter.com/matteocollina" title="Matteo Collina">
-                        <div class="speaker__picture" style="background-image: url('images/speakers/matteo.jpg')"></div>
-                        <div class="speaker__info">
-                            <div class="speaker__name">Matteo Collina</div>
-                            <div class="speaker__company">nearForm</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="speaker">
-                    <a class="speaker__card" href="https://twitter.com/rauchg" title="Guillermo Rauch">
-                        <div class="speaker__picture" style="background-image: url('images/speakers/guillermo.jpg')"></div>
-                        <div class="speaker__info">
-                            <div class="speaker__name">Guillermo Rauch</div>
-                            <div class="speaker__company">Zeit</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="speaker">
-                    <a class="speaker__card" href="https://twitter.com/krambertech" title="Kateryna Porshnieva">
-                        <div class="speaker__picture" style="background-image: url('images/speakers/kateryna.jpg')"></div>
-                        <div class="speaker__info">
-                            <div class="speaker__name">Kateryna Porshnieva</div>
-                            <div class="speaker__company">YouScan</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="speaker">
-                    <a class="speaker__card" href="https://twitter.com/mybluewristband" title="Jennifer Wong">
-                        <div class="speaker__picture" style="background-image: url('images/speakers/jenn.jpg')"></div>
-                        <div class="speaker__info">
-                            <div class="speaker__name">Jennifer Wong</div>
-                            <div class="speaker__company">Eventbrite</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="speaker">
-                    <a class="speaker__card" href="https://twitter.com/blakenewman" title="Blake Newman">
-                        <div class="speaker__picture" style="background-image: url('images/speakers/blake.jpg')"></div>
-                        <div class="speaker__info">
-                            <div class="speaker__name">Blake Newman</div>
-                            <div class="speaker__company">Sainsbury's</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="speaker">
-                    <a class="speaker__card" href="https://twitter.com/patrick_h_lauke" title="Patrick Lauke">
-                        <div class="speaker__picture" style="background-image: url('images/speakers/patrick.jpg')"></div>
-                        <div class="speaker__info">
-                            <div class="speaker__name">Patrick Lauke</div>
-                            <div class="speaker__company">The Paciello Group</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="speaker">
-                    <a class="speaker__card" href="https://twitter.com/sandropaganotti" title="Sandro Paganotti">
-                        <div class="speaker__picture" style="background-image: url('images/speakers/sandro.jpg')"></div>
-                        <div class="speaker__info">
-                            <div class="speaker__name">Sandro Paganotti</div>
-                            <div class="speaker__company">Facebook</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="speaker">
-                    <a class="speaker__card" href="https://twitter.com/jjperezaguinaga" title="Jose Aguinaga">
-                        <div class="speaker__picture" style="background-image: url('images/speakers/jose.jpg')"></div>
-                        <div class="speaker__info">
-                            <div class="speaker__name">Jose Aguinaga</div>
-                            <div class="speaker__company">Flynt</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="speaker">
-                    <a class="speaker__card" href="https://twitter.com/koste4" title="Claudia Hernández">
-                        <div class="speaker__picture" style="background-image: url('images/speakers/claudia.jpg')"></div>
-                        <div class="speaker__info">
-                            <div class="speaker__name">Claudia Hernández</div>
-                            <div class="speaker__company">Dailymotion</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="speaker">
-                    <a class="speaker__card" href="https://twitter.com/granze" title="Maurizio Mangione">
-                        <div class="speaker__picture" style="background-image: url('images/speakers/maurizio.jpg')"></div>
-                        <div class="speaker__info">
-                            <div class="speaker__name">Maurizio Mangione</div>
-                            <div class="speaker__company">Accenture</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="speaker">
-                    <a class="speaker__card" href="https://twitter.com/Lady_Ada_King" title="Ada Rose">
-                        <div class="speaker__picture" style="background-image: url('images/speakers/ada.jpg')"></div>
-                        <div class="speaker__info">
-                            <div class="speaker__name">Ada Rose</div>
-                            <div class="speaker__company">Samsung</div>
-                        </div>
-                    </a>
-                </div>
+  <div class="speakers">
+    <div class="container">
+      <div class="section-title">On stage</div>
+      <div class="speakers__list">
+        <div class="speaker">
+          <a class="speaker__card" href="https://twitter.com/dustinwhittle" title="Dustin Whittle">
+            <div class="speaker__picture" style="background-image: url('images/speakers/dustin_whittle.png')"></div>
+            <div class="speaker__info">
+              <div class="speaker__name">Dustin Whittle</div>
+              <div class="speaker__company">Uber</div>
             </div>
+          </a>
         </div>
-    </div>
-
-    <div class="sponsors">
-        <div class="container">
-            <h1 class="section-title">Sponsored by</h1>
-            <div class="sponsors__list">
-                <div class="sponsor sponsor--diamond">
-                    <a class="sponsor__card" href="https://www.microsoft.it/" title="Microsoft">
-                        <span class="sponsor__package">Diamond</span>
-                        <img class="sponsor__logo" src="images/sponsors/microsoft.svg" alt="Microsoft" />
-                    </a>
-                </div>
-                <div class="sponsor sponsor--platinum">
-                    <a class="sponsor__card" href="http://careers.workwave.com/" title="Workwave">
-                        <span class="sponsor__package">Platinum</span>
-                        <img class="sponsor__logo" src="images/sponsors/workwave.svg" alt="Workwave" />
-                    </a>
-                </div>
-                <div class="sponsor sponsor--platinum">
-                    <a class="sponsor__card" href="https://www.ideato.it/" title="Ideato">
-                        <span class="sponsor__package">Platinum</span>
-                        <img class="sponsor__logo" src="images/sponsors/ideato.svg" alt="Ideato" />
-                    </a>
-                </div>
-                <div class="sponsor sponsor--gold">
-                    <a class="sponsor__card" href="https://balsamiq.com/company/jobs/apply/2devs.html" title="Balsamiq">
-                        <span class="sponsor__package">Gold</span>
-                        <img class="sponsor__logo" src="images/sponsors/balsamiq.svg" alt="Balsamiq" />
-                    </a>
-                </div>
-                <div class="sponsor sponsor--gold">
-                    <a class="sponsor__card" href="https://madisoft.it/" title="Madisoft">
-                        <span class="sponsor__package">Gold</span>
-                        <img class="sponsor__logo" src="images/sponsors/madisoft.svg" alt="Madisoft" />
-                    </a>
-                </div>
-                <div class="sponsor sponsor--silver">
-                    <a class="sponsor__card" href="https://www.eventbrite.com/careers/" title="Eventbrite">
-                        <span class="sponsor__package">Silver</span>
-                        <img class="sponsor__logo" src="images/sponsors/eventbrite.svg" alt="Eventbrite" />
-                    </a>
-                </div>
-                <div class="sponsor sponsor--silver">
-                    <a class="sponsor__card" href="https://www.twilio.com/company/jobs" title="Twilio">
-                        <span class="sponsor__package">Silver</span>
-                        <img class="sponsor__logo" src="images/sponsors/twilio.svg" alt="Twilio" />
-                    </a>
-                </div>
-                <div class="sponsor sponsor--silver">
-                    <a class="sponsor__card" href="https://www.neen.it/" title="Neen">
-                        <span class="sponsor__package">Silver</span>
-                        <img class="sponsor__logo" src="images/sponsors/neen.svg" alt="Neen" />
-                    </a>
-                </div>
-                <div class="sponsor sponsor--silver">
-                    <a class="sponsor__card" href="http://developer.samsung.com/internet" title="Samsung">
-                        <span class="sponsor__package">Silver</span>
-                        <img class="sponsor__logo" src="images/sponsors/samsung.svg" alt="Samsung" />
-                    </a>
-                </div>
-                <div class="sponsor sponsor--silver">
-                    <a class="sponsor__card" href="https://www.opentable.com/about/ " title="OpenTable">
-                        <span class="sponsor__package">Silver</span>
-                        <img class="sponsor__logo" src="images/sponsors/opentable.svg" alt="Opentable" />
-                    </a>
-                </div>
-                <div class="sponsor sponsor--silver">
-                    <a class="sponsor__card" href="https://team.badoo.com" title="Badoo">
-                        <span class="sponsor__package">Silver</span>
-                        <img class="sponsor__logo" src="images/sponsors/badoo.svg" alt="Badoo" />
-                    </a>
-                </div>
-                <div class="sponsor sponsor--silver">
-                    <a class="sponsor__card" href="https://www.siteground.it/" title="Siteground">
-                        <span class="sponsor__package">Silver</span>
-                        <img class="sponsor__logo" src="images/sponsors/siteground.svg" alt="Siteground" />
-                    </a>
-                </div>
-                <div class="sponsor sponsor--silver">
-                    <a class="sponsor__card" href="http://www.nearform.com/" title="nearForm">
-                        <span class="sponsor__package">Silver</span>
-                        <img class="sponsor__logo" src="images/sponsors/nearform.svg" alt="nearForm" />
-                    </a>
-                </div>
+        <div class="speaker">
+          <a class="speaker__card" href="https://twitter.com/hotifatos" title="Fatos Hoti">
+            <div class="speaker__picture" style="background-image: url('images/speakers/fatos_hoti.png')"></div>
+            <div class="speaker__info">
+              <div class="speaker__name">Fatos Hoti</div>
+              <div class="speaker__company">Klara</div>
             </div>
+          </a>
         </div>
-    </div>
-
-    <div class="communities">
-        <div class="container">
-            <div class="section-title">We ❤ communities</div>
-            <div class="communities__list">
-                <div class="community">
-                    <a class="community__card" href="https://twitter.com/BolognaJS" title="BolognaJS">
-                        <img class="community__logo" src="images/communities/BolognaJS.png" alt="BolognaJS" />
-                        <div class="community__name">BolognaJS</div>
-                    </a>
-                </div>
-                <div class="community">
-                    <a class="community__card" href="https://twitter.com/catania_js" title="CataniaJS">
-                        <img class="community__logo" src="images/communities/CataniaJS.png" alt="CataniaJS" />
-                        <div class="community__name">CataniaJS</div>
-                    </a>
-                </div>
-                <div class="community">
-                    <a class="community__card" href="https://twitter.com/Ferrara_JS" title="FerraraJS">
-                        <img class="community__logo" src="images/communities/FerraraJS.png" alt="FerraraJS" />
-                        <div class="community__name">FerraraJS</div>
-                    </a>
-                </div>
-                <div class="community">
-                    <a class="community__card" href="https://twitter.com/__fevr" title="FEVR">
-                        <img class="community__logo" src="images/communities/FEVR.png" alt="FEVR" />
-                        <div class="community__name">FEVR</div>
-                    </a>
-                </div>
-                <div class="community">
-                    <a class="community__card" href="https://twitter.com/Milano_JS" title="MilanoJS">
-                        <img class="community__logo" src="images/communities/MilanoJS.png" alt="MilanoJS" />
-                        <div class="community__name">MilanoJS</div>
-                    </a>
-                </div>
-                <div class="community">
-                    <a class="community__card" href="https://twitter.com/roma_js" title="RomaJS">
-                        <img class="community__logo" src="images/communities/RomaJS.png" alt="RomaJS" />
-                        <div class="community__name">RomaJS</div>
-                    </a>
-                </div>
-                <div class="community">
-                    <a class="community__card" href="https://twitter.com/torinojs" title="TorinoJS">
-                        <img class="community__logo" src="images/communities/TorinoJS.png" alt="TorinoJS" />
-                        <div class="community__name">TorinoJS</div>
-                    </a>
-                </div>
-                <div class="community">
-                    <a class="community__card" href="https://twitter.com/trevisojs" title="TrevisoJS">
-                        <img class="community__logo" src="images/communities/TrevisoJS.png" alt="TrevisoJS" />
-                        <div class="community__name">TrevisoJS</div>
-                    </a>
-                </div>
+        <div class="speaker">
+          <a class="speaker__card" href="https://twitter.com/_paulverbeek" title="Paul Verbeek">
+            <div class="speaker__picture" style="background-image: url('images/speakers/paul_verbeek.png')"></div>
+            <div class="speaker__info">
+              <div class="speaker__name">Paul Verbeek</div>
+              <div class="speaker__company">Booking.com</div>
             </div>
+          </a>
         </div>
-    </div>
-
-    <div class="tickets">
-        <div class="container">
-            <div class="section-title">Grab your tickets</div>
-            <iframe class="tickets__iframe" src="//eventbrite.com/tickets-external?eid=28082258792&ref=etckt"></iframe>
-        </div>
-    </div>
-
-    <div class="media-partners">
-        <div class="container">
-            <div class="section-title">Media partners</div>
-            <div class="media-partners__list" data-tags="main js frontend">
+        <div class="speaker">
+          <a class="speaker__card" href="https://twitter.com/balsamiqMarco" title="Marco Botton">
+            <div class="speaker__picture" style="background-image: url('images/speakers/marco_botton.jpeg')"></div>
+            <div class="speaker__info">
+              <div class="speaker__name">Marco Botton</div>
+              <div class="speaker__company">Balsamiq</div>
             </div>
+          </a>
         </div>
-    </div>
-
-    <div class="mailing-list">
-        <div class="container">
-            <div class="mailing-list__content">
-                <div class="mailing-list__description">
-                    Don't miss any update about the conference
-                    <div class="mailing-list__subscribe">Subscribe to our newsletter</div>
-                </div>
-                <form class="mailing-list__form" action="http://grusp.us5.list-manage2.com/subscribe/post?u=29d918424cd5375f4c0c54c00&amp;id=204120a4eb" method="post">
-                    <input class="mailing-list__input" type="email" name="EMAIL" placeholder="Email address" required>
-                    <button class="mailing-list__button">Subscribe</button>
-                </form>
+        <div class="speaker">
+          <a class="speaker__card" href="https://twitter.com/sm15455" title="Stefano Mostarda">
+            <div class="speaker__picture" style="background-image: url('images/speakers/stefano_mostarda.png')"></div>
+            <div class="speaker__info">
+              <div class="speaker__name">Stefano Mostarda</div>
+              <div class="speaker__company">Microsoft</div>
             </div>
+          </a>
         </div>
-    </div>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__content">
-                <div class="footer__extra">
-                    <div class="footer__copy">
-                        jsDay and phpDay are &copy; by
-                        <a class="footer__link" href="http://www.grusp.org" title="GrUSP">GrUSP</a> and its amazing staff
-                    </div>
-                    <div class="footer__contact">
-                        Contact us: info (at) grusp (dot) org
-                    </div>
-                    <div>
-                        <a class="footer__social" href="https://twitter.com/jsconfit" title="jsday on Twitter">Follow us</a>
-                        <a class="footer__social" href="https://www.facebook.com/jsday.conference" title="jsday on Facebook">Like us</a>
-                    </div>
-                </div>
-                <div class="footer__grusp">
-                    <a href="http://www.grusp.org" title="GrUSP">
-                        <img class="footer__logo" src="images/logos/grusp.svg" alt="Grusp" />
-                    </a>
-                </div>
+        <div class="speaker">
+          <a class="speaker__card" href="https://twitter.com/tessamero" title="Tessa Mero">
+            <div class="speaker__picture" style="background-image: url('images/speakers/tessa_mero.jpeg')"></div>
+            <div class="speaker__info">
+              <div class="speaker__name">Tessa Mero</div>
+              <div class="speaker__company">Cisco</div>
             </div>
+          </a>
         </div>
-    </footer>
+        <div class="speaker">
+          <a class="speaker__card" href="https://twitter.com/michelebertoli" title="Michele Bertoli">
+            <div class="speaker__picture" style="background-image: url('images/speakers/michele_bertoli.jpeg')"></div>
+            <div class="speaker__info">
+              <div class="speaker__name">Michele Bertoli</div>
+              <div class="speaker__company">Facebook</div>
+            </div>
+          </a>
+        </div>
+        <div class="speaker">
+          <a class="speaker__card" href="https://twitter.com/nickbalestra" title="Nick Balestra">
+            <div class="speaker__picture" style="background-image: url('images/speakers/nick_balestra.jpg')"></div>
+            <div class="speaker__info">
+              <div class="speaker__name">Nick Balestra</div>
+              <div class="speaker__company">OpenTable</div>
+            </div>
+          </a>
+        </div>
+        <div class="speaker">
+          <a class="speaker__card" href="https://twitter.com/philnash" title="Phil Nash">
+            <div class="speaker__picture" style="background-image: url('images/speakers/phil_nash.jpeg')"></div>
+            <div class="speaker__info">
+              <div class="speaker__name">Phil Nash</div>
+              <div class="speaker__company">Twilio</div>
+            </div>
+          </a>
+        </div>
+        <div class="speaker">
+          <a class="speaker__card" href="https://twitter.com/_odino_" title="Alessandro Nadalin">
+            <div class="speaker__picture" style="background-image: url('images/speakers/alessandro_nadalin.jpeg')"></div>
+            <div class="speaker__info">
+              <div class="speaker__name">Alessandro Nadalin</div>
+              <div class="speaker__company">Namshi</div>
+            </div>
+          </a>
+        </div>
+        <div class="speaker">
+          <a class="speaker__card" href="https://twitter.com/NikhilVerma" title="Nikhil Verma">
+            <div class="speaker__picture" style="background-image: url('images/speakers/nikhil_verma.jpg')"></div>
+            <div class="speaker__info">
+              <div class="speaker__name">Nikhil Verma</div>
+              <div class="speaker__company">Badoo</div>
+            </div>
+          </a>
+        </div>
+        <div class="speaker">
+          <a class="speaker__card" href="https://twitter.com/lucamezzalira" title="Luca Mezzalira">
+            <div class="speaker__picture" style="background-image: url('images/speakers/luca.jpg')"></div>
+            <div class="speaker__info">
+              <div class="speaker__name">Luca Mezzalira</div>
+              <div class="speaker__company">DAZN</div>
+            </div>
+          </a>
+        </div>
+        <div class="speaker">
+          <a class="speaker__card" href="https://twitter.com/jjordan_dev" title="Jessica Jordan">
+            <div class="speaker__picture" style="background-image: url('images/speakers/jessica.jpg')"></div>
+            <div class="speaker__info">
+              <div class="speaker__name">Jessica Jordan</div>
+              <div class="speaker__company">Freelance</div>
+            </div>
+          </a>
+        </div>
+        <div class="speaker">
+          <a class="speaker__card" href="https://twitter.com/cef62" title="Matteo Ronchi">
+            <div class="speaker__picture" style="background-image: url('images/speakers/ronchi.jpg')"></div>
+            <div class="speaker__info">
+              <div class="speaker__name">Matteo Ronchi</div>
+              <div class="speaker__company">WorkWave</div>
+            </div>
+          </a>
+        </div>
+        <div class="speaker">
+          <a class="speaker__card" href="https://twitter.com/addaleax" title="Anna Henningsen">
+            <div class="speaker__picture" style="background-image: url('images/speakers/anna.jpg')"></div>
+            <div class="speaker__info">
+              <div class="speaker__name">Anna Henningsen</div>
+              <div class="speaker__company">Node.js contributor</div>
+            </div>
+          </a>
+        </div>
+        <div class="speaker">
+          <a class="speaker__card" href="https://twitter.com/_lrlna" title="Irina Shestak">
+            <div class="speaker__picture" style="background-image: url('images/speakers/irina.jpg')"></div>
+            <div class="speaker__info">
+              <div class="speaker__name">Irina Shestak</div>
+              <div class="speaker__company">Small Media</div>
+            </div>
+          </a>
+        </div>
+        <div class="speaker">
+          <a class="speaker__card" href="https://twitter.com/matteocollina" title="Matteo Collina">
+            <div class="speaker__picture" style="background-image: url('images/speakers/matteo.jpg')"></div>
+            <div class="speaker__info">
+              <div class="speaker__name">Matteo Collina</div>
+              <div class="speaker__company">nearForm</div>
+            </div>
+          </a>
+        </div>
+        <div class="speaker">
+          <a class="speaker__card" href="https://twitter.com/rauchg" title="Guillermo Rauch">
+            <div class="speaker__picture" style="background-image: url('images/speakers/guillermo.jpg')"></div>
+            <div class="speaker__info">
+              <div class="speaker__name">Guillermo Rauch</div>
+              <div class="speaker__company">Zeit</div>
+            </div>
+          </a>
+        </div>
+        <div class="speaker">
+          <a class="speaker__card" href="https://twitter.com/krambertech" title="Kateryna Porshnieva">
+            <div class="speaker__picture" style="background-image: url('images/speakers/kateryna.jpg')"></div>
+            <div class="speaker__info">
+              <div class="speaker__name">Kateryna Porshnieva</div>
+              <div class="speaker__company">YouScan</div>
+            </div>
+          </a>
+        </div>
+        <div class="speaker">
+          <a class="speaker__card" href="https://twitter.com/mybluewristband" title="Jennifer Wong">
+            <div class="speaker__picture" style="background-image: url('images/speakers/jenn.jpg')"></div>
+            <div class="speaker__info">
+              <div class="speaker__name">Jennifer Wong</div>
+              <div class="speaker__company">Eventbrite</div>
+            </div>
+          </a>
+        </div>
+        <div class="speaker">
+          <a class="speaker__card" href="https://twitter.com/blakenewman" title="Blake Newman">
+            <div class="speaker__picture" style="background-image: url('images/speakers/blake.jpg')"></div>
+            <div class="speaker__info">
+              <div class="speaker__name">Blake Newman</div>
+              <div class="speaker__company">Sainsbury's</div>
+            </div>
+          </a>
+        </div>
+        <div class="speaker">
+          <a class="speaker__card" href="https://twitter.com/patrick_h_lauke" title="Patrick Lauke">
+            <div class="speaker__picture" style="background-image: url('images/speakers/patrick.jpg')"></div>
+            <div class="speaker__info">
+              <div class="speaker__name">Patrick Lauke</div>
+              <div class="speaker__company">The Paciello Group</div>
+            </div>
+          </a>
+        </div>
+        <div class="speaker">
+          <a class="speaker__card" href="https://twitter.com/sandropaganotti" title="Sandro Paganotti">
+            <div class="speaker__picture" style="background-image: url('images/speakers/sandro.jpg')"></div>
+            <div class="speaker__info">
+              <div class="speaker__name">Sandro Paganotti</div>
+              <div class="speaker__company">Facebook</div>
+            </div>
+          </a>
+        </div>
+        <div class="speaker">
+          <a class="speaker__card" href="https://twitter.com/jjperezaguinaga" title="Jose Aguinaga">
+            <div class="speaker__picture" style="background-image: url('images/speakers/jose.jpg')"></div>
+            <div class="speaker__info">
+              <div class="speaker__name">Jose Aguinaga</div>
+              <div class="speaker__company">Flynt</div>
+            </div>
+          </a>
+        </div>
+        <div class="speaker">
+          <a class="speaker__card" href="https://twitter.com/koste4" title="Claudia Hernández">
+            <div class="speaker__picture" style="background-image: url('images/speakers/claudia.jpg')"></div>
+            <div class="speaker__info">
+              <div class="speaker__name">Claudia Hernández</div>
+              <div class="speaker__company">Dailymotion</div>
+            </div>
+          </a>
+        </div>
+        <div class="speaker">
+          <a class="speaker__card" href="https://twitter.com/granze" title="Maurizio Mangione">
+            <div class="speaker__picture" style="background-image: url('images/speakers/maurizio.jpg')"></div>
+            <div class="speaker__info">
+              <div class="speaker__name">Maurizio Mangione</div>
+              <div class="speaker__company">Accenture</div>
+            </div>
+          </a>
+        </div>
+        <div class="speaker">
+          <a class="speaker__card" href="https://twitter.com/Lady_Ada_King" title="Ada Rose">
+            <div class="speaker__picture" style="background-image: url('images/speakers/ada.jpg')"></div>
+            <div class="speaker__info">
+              <div class="speaker__name">Ada Rose</div>
+              <div class="speaker__company">Samsung</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Load media partners -->
-    <script src="//www.grusp.org/helpers/2017/jsday.js"></script>
+  <div class="sponsors">
+    <div class="container">
+      <h1 class="section-title">Sponsored by</h1>
+      <div class="sponsors__list">
+        <div class="sponsor sponsor--diamond">
+          <a class="sponsor__card" href="https://www.microsoft.it/" title="Microsoft">
+            <span class="sponsor__package">Diamond</span>
+            <img class="sponsor__logo" src="images/sponsors/microsoft.svg" alt="Microsoft" />
+          </a>
+        </div>
+        <div class="sponsor sponsor--platinum">
+          <a class="sponsor__card" href="http://careers.workwave.com/" title="Workwave">
+            <span class="sponsor__package">Platinum</span>
+            <img class="sponsor__logo" src="images/sponsors/workwave.svg" alt="Workwave" />
+          </a>
+        </div>
+        <div class="sponsor sponsor--platinum">
+          <a class="sponsor__card" href="https://www.ideato.it/" title="Ideato">
+            <span class="sponsor__package">Platinum</span>
+            <img class="sponsor__logo" src="images/sponsors/ideato.svg" alt="Ideato" />
+          </a>
+        </div>
+        <div class="sponsor sponsor--gold">
+          <a class="sponsor__card" href="https://balsamiq.com/company/jobs/apply/2devs.html" title="Balsamiq">
+            <span class="sponsor__package">Gold</span>
+            <img class="sponsor__logo" src="images/sponsors/balsamiq.svg" alt="Balsamiq" />
+          </a>
+        </div>
+        <div class="sponsor sponsor--gold">
+          <a class="sponsor__card" href="https://madisoft.it/" title="Madisoft">
+            <span class="sponsor__package">Gold</span>
+            <img class="sponsor__logo" src="images/sponsors/madisoft.svg" alt="Madisoft" />
+          </a>
+        </div>
+        <div class="sponsor sponsor--silver">
+          <a class="sponsor__card" href="https://www.eventbrite.com/careers/" title="Eventbrite">
+            <span class="sponsor__package">Silver</span>
+            <img class="sponsor__logo" src="images/sponsors/eventbrite.svg" alt="Eventbrite" />
+          </a>
+        </div>
+        <div class="sponsor sponsor--silver">
+          <a class="sponsor__card" href="https://www.twilio.com/company/jobs" title="Twilio">
+            <span class="sponsor__package">Silver</span>
+            <img class="sponsor__logo" src="images/sponsors/twilio.svg" alt="Twilio" />
+          </a>
+        </div>
+        <div class="sponsor sponsor--silver">
+          <a class="sponsor__card" href="https://www.neen.it/" title="Neen">
+            <span class="sponsor__package">Silver</span>
+            <img class="sponsor__logo" src="images/sponsors/neen.svg" alt="Neen" />
+          </a>
+        </div>
+        <div class="sponsor sponsor--silver">
+          <a class="sponsor__card" href="http://developer.samsung.com/internet" title="Samsung">
+            <span class="sponsor__package">Silver</span>
+            <img class="sponsor__logo" src="images/sponsors/samsung.svg" alt="Samsung" />
+          </a>
+        </div>
+        <div class="sponsor sponsor--silver">
+          <a class="sponsor__card" href="https://www.opentable.com/about/ " title="OpenTable">
+            <span class="sponsor__package">Silver</span>
+            <img class="sponsor__logo" src="images/sponsors/opentable.svg" alt="Opentable" />
+          </a>
+        </div>
+        <div class="sponsor sponsor--silver">
+          <a class="sponsor__card" href="https://team.badoo.com" title="Badoo">
+            <span class="sponsor__package">Silver</span>
+            <img class="sponsor__logo" src="images/sponsors/badoo.svg" alt="Badoo" />
+          </a>
+        </div>
+        <div class="sponsor sponsor--silver">
+          <a class="sponsor__card" href="https://www.siteground.it/" title="Siteground">
+            <span class="sponsor__package">Silver</span>
+            <img class="sponsor__logo" src="images/sponsors/siteground.svg" alt="Siteground" />
+          </a>
+        </div>
+        <div class="sponsor sponsor--silver">
+          <a class="sponsor__card" href="http://www.nearform.com/" title="nearForm">
+            <span class="sponsor__package">Silver</span>
+            <img class="sponsor__logo" src="images/sponsors/nearform.svg" alt="nearForm" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="communities">
+    <div class="container">
+      <div class="section-title">We ❤ communities</div>
+      <div class="communities__list">
+        <div class="community">
+          <a class="community__card" href="https://twitter.com/BolognaJS" title="BolognaJS">
+            <img class="community__logo" src="images/communities/BolognaJS.png" alt="BolognaJS" />
+            <div class="community__name">BolognaJS</div>
+          </a>
+        </div>
+        <div class="community">
+          <a class="community__card" href="https://twitter.com/catania_js" title="CataniaJS">
+            <img class="community__logo" src="images/communities/CataniaJS.png" alt="CataniaJS" />
+            <div class="community__name">CataniaJS</div>
+          </a>
+        </div>
+        <div class="community">
+          <a class="community__card" href="https://twitter.com/Ferrara_JS" title="FerraraJS">
+            <img class="community__logo" src="images/communities/FerraraJS.png" alt="FerraraJS" />
+            <div class="community__name">FerraraJS</div>
+          </a>
+        </div>
+        <div class="community">
+          <a class="community__card" href="https://twitter.com/__fevr" title="FEVR">
+            <img class="community__logo" src="images/communities/FEVR.png" alt="FEVR" />
+            <div class="community__name">FEVR</div>
+          </a>
+        </div>
+        <div class="community">
+          <a class="community__card" href="https://twitter.com/Milano_JS" title="MilanoJS">
+            <img class="community__logo" src="images/communities/MilanoJS.png" alt="MilanoJS" />
+            <div class="community__name">MilanoJS</div>
+          </a>
+        </div>
+        <div class="community">
+          <a class="community__card" href="https://twitter.com/roma_js" title="RomaJS">
+            <img class="community__logo" src="images/communities/RomaJS.png" alt="RomaJS" />
+            <div class="community__name">RomaJS</div>
+          </a>
+        </div>
+        <div class="community">
+          <a class="community__card" href="https://twitter.com/torinojs" title="TorinoJS">
+            <img class="community__logo" src="images/communities/TorinoJS.png" alt="TorinoJS" />
+            <div class="community__name">TorinoJS</div>
+          </a>
+        </div>
+        <div class="community">
+          <a class="community__card" href="https://twitter.com/trevisojs" title="TrevisoJS">
+            <img class="community__logo" src="images/communities/TrevisoJS.png" alt="TrevisoJS" />
+            <div class="community__name">TrevisoJS</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tickets">
+    <div class="container">
+      <div class="section-title">Grab your tickets</div>
+      <iframe class="tickets__iframe" src="//eventbrite.com/tickets-external?eid=28082258792&ref=etckt"></iframe>
+    </div>
+  </div>
+
+  <div class="media-partners">
+    <div class="container">
+      <div class="section-title">Media partners</div>
+      <div class="media-partners__list" data-tags="main js frontend">
+      </div>
+    </div>
+  </div>
+
+  <div class="mailing-list">
+    <div class="container">
+      <div class="mailing-list__content">
+        <div class="mailing-list__description">
+          Don't miss any update about the conference
+          <div class="mailing-list__subscribe">Subscribe to our newsletter</div>
+        </div>
+        <form class="mailing-list__form" action="http://grusp.us5.list-manage2.com/subscribe/post?u=29d918424cd5375f4c0c54c00&amp;id=204120a4eb" method="post">
+          <input class="mailing-list__input" type="email" name="EMAIL" placeholder="Email address" required>
+          <button class="mailing-list__button">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__extra">
+          <div class="footer__copy">
+            jsDay and phpDay are &copy; by
+            <a class="footer__link" href="http://www.grusp.org" title="GrUSP">GrUSP</a> and its amazing staff
+          </div>
+          <div class="footer__contact">
+            Contact us: info (at) grusp (dot) org
+          </div>
+          <div>
+            <a class="footer__social" href="https://twitter.com/jsconfit" title="jsday on Twitter">Follow us</a>
+            <a class="footer__social" href="https://www.facebook.com/jsday.conference" title="jsday on Facebook">Like us</a>
+          </div>
+        </div>
+        <div class="footer__grusp">
+          <a href="http://www.grusp.org" title="GrUSP">
+            <img class="footer__logo" src="images/logos/grusp.svg" alt="Grusp" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Load media partners -->
+  <script src="//www.grusp.org/helpers/2017/jsday.js"></script>
 
 </body>
 
