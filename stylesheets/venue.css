@@ -1,0 +1,76 @@
+.venue__map {
+  margin-bottom: 3rem;
+}
+
+.venue__static-map {
+  max-width: 100%;
+  transform: scale(0.9);
+  transition: transform 1s ease-in-out;
+}
+
+@media (max-width: 30rem) {
+  .venue__static-map {
+    transform: none;
+    transition: none;
+  }
+}
+
+.venue__static-map:hover {
+  transform: scale(1);
+}
+
+.venue__address {
+  margin-bottom: 3rem;
+}
+
+.venue__hotel {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+.venue__content {
+  line-height: 1.2;
+  margin-bottom: .5rem;
+}
+
+.venue__url {
+  color: #652D90;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.venue__discount {
+  font-style: italic;
+}
+
+.venue__directions {
+  margin-bottom: 3rem;
+}
+
+.venue__direction-list {
+  display: flex;
+}
+
+@media (max-width: 30rem) {
+  .venue__direction-list {
+    flex-direction: column;
+  }
+}
+
+.venue__direction {
+  flex: 1 1;
+  line-height: 1.2;
+  padding-right: .5rem;
+}
+
+@media (max-width: 30rem) {
+  .venue__direction {
+    margin-bottom: 1rem;
+  }
+}
+
+.venue__from {
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
