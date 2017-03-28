@@ -1,0 +1,36 @@
+.schedule__table {
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.schedule__header th {
+  background-color: rgba(38, 34, 97, 0.4);
+  padding: .5rem;
+}
+
+.schedule__row td {
+  line-height: 1.2;
+  padding: 1rem;
+}
+
+@media (max-width: 30rem) {
+  .schedule__row td {
+    padding: .5rem;
+  }
+}
+
+.schedule__row--break td {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  text-transform: uppercase;
+}
+
+
+.schedule__talk-title {
+  color: #000;
+  margin-bottom: 0.25rem;
+}
+
+.schedule__talk-author {
+  color: #652D90;
+}
