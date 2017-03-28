@@ -1,6 +1,7 @@
 .schedule__table {
   margin-bottom: 3rem;
   width: 100%;
+  font-size: 90%;
 }
 
 .schedule__header th {
@@ -10,12 +11,13 @@
 
 .schedule__row td {
   line-height: 1.2;
-  padding: 1rem;
+  padding: .5rem;
 }
 
 @media (max-width: 30rem) {
   .schedule__row td {
     padding: .5rem;
+    font-size: 70%;
   }
 }
 
@@ -33,4 +35,13 @@
 
 .schedule__talk-author {
   color: #652D90;
+}
+
+.centered {
+  text-align: center;
+}
+
+.italic_bold {
+  font-style: italic;
+  font-weight: bold;
 }
