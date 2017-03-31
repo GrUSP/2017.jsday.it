@@ -154,15 +154,21 @@ a {
   }
 }
 
+.header__soldout{
+  float: left;
+}
+
 .header__dates {
   color: #fff;
   font-size: 2rem;
   margin-bottom: 0.25rem;
+  float: left;
 }
 
 .header__address {
   color: #ccc;
   font-size: 1.2rem;
+  float: clear;
 }
 
 
