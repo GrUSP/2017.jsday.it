@@ -142,9 +142,23 @@ a {
   }
 }
 
+.header__soldout {
+  margin-left: auto;
+}
+
+@media (max-width: 30rem) {
+  .header__soldout {
+    margin: -15px auto 20px;
+  }
+}
+
 .header__extra {
   margin-left: auto;
   text-align: center;
+}
+
+.header__soldout + .header__extra {
+  margin-left: 0;
 }
 
 @media (max-width: 30rem) {
