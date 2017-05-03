@@ -1,0 +1,21 @@
+.coc-intro {
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.coc-intro__subtitle {
+  color: #652D90;
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1.4;
+  margin-bottom: 3rem;
+}
+
+.coc-description {
+  columns: 2;
+  line-height: 1.4;
+}
+
+.coc_version {
+	margin-bottom: 3rem;
+}
