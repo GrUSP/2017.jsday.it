@@ -1,0 +1,32 @@
+
+
+.unconf-intro__subtitle {
+  color: #652D90;
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1.4;
+  margin-bottom: 3rem;
+}
+
+
+.unconf-a {
+  color: #652D90;
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1.4;
+  margin-bottom: 3rem;
+}
+
+.unconf_paragraph{
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.coc_version {
+	margin-bottom: 3rem;
+}
+
+.unconf__strong {
+  color: #000;
+  font-weight: bold;
+}
